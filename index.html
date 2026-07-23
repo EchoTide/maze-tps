@@ -194,7 +194,6 @@ function buildFallbackCharacter() {
 
 function onCharacterLoaded(p) {
   player = p;
-  window.player = p;
   player.traverse(o => { if (o.isMesh) o.castShadow = true; });
   for (const n of ['ArmL','ArmR','LegL','LegR','Body','Head']) {
     const o = player.getObjectByName(n);
